@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Web Frontend I | Michael Ray Nisola</title>
+    <meta name="description" content="This page is dedicated to learning how to build dynamic websites using HTML, CSS, JavaScript, JSON, API, and UX design techniques. The final website in this repository was created during the WDD 231 classes, from September to December 2024. ">
+    <meta name="author" content="AMichael Ray Nisola">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/courses.js"></script>
+    
+</head>
+<body>
+    <header>
+        <!-- HEADER | NAVIGATION -->
+        <div class="header">
+            <div class="image-profile">
+                <img src="images/profile.jpg" alt="Michael Nisola" width="150">
+            </div>
+            <h1>Michael Ray Nisola</h1>
+            <!-- Hamburger menu button -->
+            <button id="menubutton"></button>
+        </div>
+        
+        <nav id="animatemenu">
+            <ul class="navigation-links">
+                <li><a href="#" class="active-menu-link">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT SECTION -->
+        
+
+        <div class="bento-grid">
+            <section class="card">
+                <h2>Course Work</h2>
+                
+                <ul class="link">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>    
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Laguna Phillipines</h2>
+                <div class="image">
+                    <img src="images/mayon.jpg" alt="Laguna,Phillipines" width="150">
+                </div>
+                <p>Laguna Phillipines.</p>
+            </section>
+
+            <section class="card large-card">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <!-- Buttons for filtering -->
+                <div class="courses-type">
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="CSE">CSE</button>
+                    <button class="filter-btn" data-filter="WDD">WDD</button>
+                </div>
+
+                <!-- Courses to be filtered -->
+                <div class="courses">
+                    
+                </div>
+                <div>
+                    <p>Total Credits: <span id="total-credits"></span></p>
+                </div>
+
+            </section>
+        </div>
+
+
+        
+    </main>
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Michael Ray Nisola | Laguna, Phillipines</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>
